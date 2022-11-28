@@ -2,5 +2,19 @@ def funcionInterfaz():
     print("1 - Sumar")
     print("2 - Salir")
 def funcionSuma(num1,num2):
-    print(num1+num2)
-print(funcionInterfaz)
+    return num1+num2
+contador=0
+while contador!=2:
+    funcionInterfaz()
+    contador = int(input())
+    if contador == 1:
+        try:
+            print("Dime el primer numero")
+            num1 = int(input())
+            print("Dime el segundo numero")
+            num2 = int(input())
+            print("La suma es",funcionSuma(num1,num2))
+        except: 
+            if num1 and num2 != int:
+                print("Intentalo de nuevo")
+print("Ha acabado el programa")

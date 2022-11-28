@@ -19,6 +19,6 @@ while contador!=2:
             num2 = int(input())
             print("La suma es",funcionSuma(num1,num2))
         except: 
-            if num1 and num2 != int:
+            if num1 or num2 != int:
                 print("Intentalo de nuevo")
 print("Ha acabado el programa")
